@@ -46,7 +46,8 @@ public class MainActivity extends AppCompatActivity {
           public void onResponse(Call<UdacityCatalog> call, Response<UdacityCatalog> response) {
               UdacityCatalog catalog = response.body();
 
-//
+//esse aplicativo ira revolucionar o mundo
+
               AdapterCourse adapterCourse = new AdapterCourse(MainActivity.this, catalog.courses);
               listViewCursos = (ListView) findViewById(R.id.listViewCursos);
               listViewCursos.setAdapter(adapterCourse);
